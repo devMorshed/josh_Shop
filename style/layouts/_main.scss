@@ -1,0 +1,8 @@
+.main__container {
+  min-width: 1280px;
+  margin: 0 auto;
+  background: gray;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; 
+  gap: 3rem;
+}
