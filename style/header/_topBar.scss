@@ -1,3 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #1F1F1F;
+    padding: 10px 20px;
+}
+
 .top-bar{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+        color: #999;
+        font-size: 18px;
+    }
+
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        a{
+            i{
+                color: #999;
+                font-size: 14px;
+            }
+        }
+    }
 }
