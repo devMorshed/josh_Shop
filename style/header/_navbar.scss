@@ -1,0 +1,19 @@
+.nav-bar{
+    background-color: #1A1A1A;
+    padding: 15px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 30px;
+
+        li{
+            a{
+                text-decoration: none;
+                color: #999;
+            }
+        }
+    }
+}
