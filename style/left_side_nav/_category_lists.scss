@@ -1,0 +1,19 @@
+#category-lists{
+    list-style: none;
+    background-color: #1F1F1F;
+    color: #999;
+    padding: 0 15px;
+    width: 100%;
+    overflow: hidden;
+    transition-duration: 700ms;
+
+
+    li{
+        padding: 15px 0;
+
+        a{
+            text-decoration: none;
+            color: #999;
+        }
+    }
+}
