@@ -7,9 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="/dist/style/style.css" />
 </head>
+
 <body>
     <main>
-      <header>
+        <header>
             <div class="top-bar">
                 <p>Welcome to foodie</p>
                 <div class="social-icons">
@@ -37,13 +38,13 @@
 
             <div class="main-header">
                 <h3>Foodie</h3>
-                
+
                 <div class="right-side">
                     <form class="search-section">
                         <input type="text" name="" id="" placeholder="Search...">
                         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
-    
+
                     <a>
                         <span>My Favourite</span>
                         <span class="hover-text">
@@ -54,7 +55,7 @@
                         <span>Signup / Login</span>
                         <span class="hover-text">My account <i class="fa-solid fa-lock"></i></span>
                     </a>
-    
+
                     <button class="bag-button"><i class="fa-solid fa-bag-shopping"></i></button>
                 </div>
             </div>
@@ -80,23 +81,50 @@
             </nav>
         </header>
 
-      <div class="main__container">
-        <!-- left side nav -->
-        <aside>hey</aside>
+        <div class="main__container">
+            <!-- left side nav -->
+            <section id="left-side-nav">
 
-        <!-- middle main content -->
-        <section>
-          <section>
-            <img width="600px" src="assets/image/banner/img-1.avif" alt="" id="carousel">
-          </section>
-        </section>
-        <!-- right side nav -->
-        <aside>hi</aside>
-      </div>
-      <footer></footer>
+                <div class="category">
+                    <button id="cetegory-button">
+                        <span>
+                            <i class="fa-solid fa-bars"></i>
+                            Category
+                        </span>
+                        <i id="down-arrow" class="fa-solid fa-chevron-down"></i>
+                        <i id="up-arrow" class="fa-solid fa-chevron-up"></i>
+                    </button>
+
+                    <ul id="category-lists">
+                        <li><a href="#">Desserts</a></li>
+                        <li><a href="#">Drinks</a></li>
+                        <li><a href="#">Pasta</a></li>
+                        <li><a href="#">Pizza</a></li>
+                        <li><a href="#">Sandwiches</a></li>
+                    </ul>
+
+
+                </div>
+
+
+            </section>
+
+
+            <!-- middle main content -->
+            <section>
+                <section>
+                    <img width="600px" src="assets/image/banner/img-1.avif" alt="" id="carousel">
+                </section>
+            </section>
+            <!-- right side nav -->
+            <aside>hi</aside>
+        </div>
+        <footer></footer>
     </main>
     <script src="script/index.js"></script>
     <script src="script/carousel.js"></script>
+    <script src="script/category.js"></script>
     <script src="https://kit.fontawesome.com/9b1455936d.js" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
