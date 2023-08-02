@@ -1,0 +1,34 @@
+.category{
+    width: 100%;
+    
+
+    #cetegory-button{
+        background-color: #DD9933;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+        color: antiquewhite;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        letter-spacing: 1px;
+
+        .fa-bars{
+            font-size: 20px;
+            margin-right: 5px;
+            
+        }
+        .fa-chevron-down{
+            font-size: 12px;
+            display: none;
+        }
+
+        .fa-chevron-up{
+            font-size: 12px;
+        }
+    }
+
+}
+
