@@ -1,0 +1,42 @@
+.nav-bar{
+    background-color: #1A1A1A;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        li{
+            a{
+                text-decoration: none;
+                color: #999;
+            }
+        }
+    }
+
+    .call-to{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .call-icon{
+            font-size: 15px;
+            background-color: #DD9933;
+            padding: 6px 7px;
+            border-radius: 50%;
+        }
+
+        .text-number{
+            font-size: 14px;
+            .number{
+                color: #999;
+                font-size: 16px;
+                margin-top: 5px;
+                font-weight: bold;
+            }
+        }
+    }
+}
