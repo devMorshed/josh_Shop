@@ -4,7 +4,12 @@
 }
 header{
     background-color: #1F1F1F;
-    width: 100%;
+    width: 100vw;
+}
+
+// TODO: main container er class and style remove 
+.main__container{
+    display: none;
 }
 
 .top-bar{

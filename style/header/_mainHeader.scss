@@ -1,46 +1,58 @@
-.main-header{
+.main-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
     color: #FFFFFF;
     margin: 25px 0;
     padding: 0 20px;
-    h3{
+
+    h3 {
         font-size: 50px;
         color: #FFFFFF;
     }
 
-    .right-side{
+    
+
+    .right-side {
         display: flex;
         gap: 20px;
+        width: 100%;
+        align-items: center;
 
-        .search-section{
+        .search-section {
             display: flex;
             padding: 20px;
+            align-items: center;
             background-color: #0A0A0A;
-            width: 500px;
-            margin: 0;
+            width: 100%;
+            height: fit-content;
+            max-width: 500px;
+            margin: 0 ;
+            margin-left: auto;
             padding: 0;
             border-radius: 10px;
-            
-
-            input{
+    
+    
+            input {
                 width: 85%;
                 height: 100%;
-                margin: 0;
-                padding: 0px 15px;
+    
+                padding: 11px 15px;
                 border: 0px;
                 outline: none;
                 font-size: 20px;
                 background-color: #141415;
                 color: #FFFFFF;
-                border-radius: 10px 0 0 10px ;
+                border-radius: 10px 0 0 10px;
             }
-            input::placeholder{
+    
+            input::placeholder {
                 font-size: 16px;
-                
+    
             }
-            button{
+    
+            button {
                 width: 13%;
                 height: 35px;
                 margin: 0;
@@ -49,34 +61,65 @@
                 background-color: #DD9933;
                 border-radius: 8px;
                 margin: 5px;
-
-                i{
+    
+                i {
                     color: #FFFFFF;
                     font-size: 20px;
                 }
             }
         }
 
-        a{
+
+        .nav-button {
             display: flex;
-            gap: 5px;
-            flex-direction: column;
-            padding: 0 30px;
-            cursor: pointer;
-            border-right: 1px solid #999;
-        }
-        a:hover{
-            .hover-text{
-                color: #DD9933;
-                transition-duration: 500ms;
+            gap: 20px;
+            width: fit-content;
+            // border: 1px solid red;
+
+            a {
+                // border: 1px solid blueviolet;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                gap: 5px;
+                flex-direction: column;
+                padding: 0 0px;
+                cursor: pointer;
+                position: relative;
+                padding: 0 15px;
+
+                i{
+                    font-size: 24px;
+                }
+            }
+
+            a::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                border-right: 1px solid #999;
+            }
+
+            a:hover {
+                .hover-text {
+                    color: #DD9933;
+                    transition-duration: 500ms;
+                }
             }
         }
 
-        .bag-button{
+
+
+
+
+        .bag-button {
             background-color: #1f1f1f;
             border: none;
             margin-right: 10px;
-            i{
+
+            i {
                 color: #FFFFFF;
                 font-size: 30px;
             }
@@ -84,3 +127,43 @@
 
     }
 }
+
+
+@media (320px <=width <=480px) {}
+
+@media (481px <=width <=768px) {
+    .main-header {
+        display: block;
+
+        .right-side {
+            flex-direction: column-reverse;
+
+            .search-section{
+                width: 100%;
+                max-width: none;
+            }
+
+            .nav-button{
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+@media (320px <=width <=1020px) {
+    .main-header {
+        .right-side {
+            .nav-button {
+                a {
+                    span {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media (1021px <=width <=1200px) {}

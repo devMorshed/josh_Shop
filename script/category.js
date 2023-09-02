@@ -1,4 +1,4 @@
-let isOpen = false;
+let isOpen = true;
 
 document.getElementById("cetegory-button").addEventListener('click', function(e){
 
@@ -8,16 +8,17 @@ document.getElementById("cetegory-button").addEventListener('click', function(e)
 
 
     if(isOpen){
-        faDown.style.display = "none"
-        faup.style.display = "block"
-        category_ul.style.height = "240px"
-        console.log('up');
-    }
-    else{
+        
         faDown.style.display = "block"
         faup.style.display = "none"
         category_ul.style.height = 0
         console.log('down');
+    }
+    else{
+        faDown.style.display = "none"
+        faup.style.display = "block"
+        category_ul.style.height = "240px"
+        console.log('up');
     }
 
     isOpen = !isOpen
